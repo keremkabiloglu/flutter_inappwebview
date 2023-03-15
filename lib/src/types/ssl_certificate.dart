@@ -1,10 +1,8 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_inappwebview_internal_annotations/flutter_inappwebview_internal_annotations.dart';
 
 import '../util.dart';
-import '../x509_certificate/x509_certificate.dart';
 import '../x509_certificate/asn1_distinguished_names.dart';
-
+import '../x509_certificate/x509_certificate.dart';
 import 'ssl_certificate_dname.dart';
 
 part 'ssl_certificate.g.dart';

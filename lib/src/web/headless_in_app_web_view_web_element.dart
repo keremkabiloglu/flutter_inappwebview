@@ -1,11 +1,11 @@
 import 'dart:async';
-import 'dart:ui';
+
 import 'package:flutter/services.dart';
 
+import '../types/disposable.dart';
+import '../util.dart';
 import 'headless_inappwebview_manager.dart';
 import 'in_app_web_view_web_element.dart';
-import '../util.dart';
-import '../types/disposable.dart';
 
 class HeadlessInAppWebViewWebElement implements Disposable {
   String id;

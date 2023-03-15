@@ -1,7 +1,8 @@
 import 'package:flutter/services.dart';
-import '../types/print_job_info.dart';
+
 import '../in_app_webview/in_app_webview_controller.dart';
 import '../types/disposable.dart';
+import '../types/print_job_info.dart';
 
 ///A completion handler for the [PrintJobController].
 typedef PrintJobCompletionHandler = Future<void> Function(
@@ -82,7 +83,7 @@ class PrintJobController implements Disposable {
   ///
   ///**Supported Platforms/Implementations**:
   ///- iOS
-  Future<void> dismiss({bool animated: true}) async {
+  Future<void> dismiss({bool animated = true}) async {
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("animated", () => animated);
     await _channel.invokeMethod('dismiss', args);

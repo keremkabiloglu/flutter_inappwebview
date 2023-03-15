@@ -1,17 +1,15 @@
 import 'dart:async';
 import 'dart:collection';
-import 'dart:typed_data';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+
+import '../debug_logging_settings.dart';
 import '../types/android_resource.dart';
 import '../types/custom_tabs_navigation_event_type.dart';
 import '../types/custom_tabs_relation_type.dart';
 import '../types/prewarming_token.dart';
 import '../types/ui_image.dart';
 import '../util.dart';
-import '../debug_logging_settings.dart';
-
 import '../web_uri.dart';
 import 'chrome_safari_browser_settings.dart';
 

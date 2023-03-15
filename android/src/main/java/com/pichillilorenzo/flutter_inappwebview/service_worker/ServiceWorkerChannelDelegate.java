@@ -72,13 +72,6 @@ public class ServiceWorkerChannelDelegate extends ChannelDelegateImpl {
           result.success(false);
         }
         break;
-      case "getRequestedWithHeaderMode":
-        if (serviceWorkerWebSettings != null && WebViewFeature.isFeatureSupported(WebViewFeature.REQUESTED_WITH_HEADER_CONTROL)) {
-          result.success(serviceWorkerWebSettings.getRequestedWithHeaderMode());
-        } else {
-          result.success(null);
-        }
-        break;
       case "getCacheMode":
         if (serviceWorkerWebSettings != null && WebViewFeature.isFeatureSupported(WebViewFeature.SERVICE_WORKER_CACHE_MODE)) {
           result.success(serviceWorkerWebSettings.getCacheMode());
@@ -111,13 +104,6 @@ public class ServiceWorkerChannelDelegate extends ChannelDelegateImpl {
         if (serviceWorkerWebSettings != null && WebViewFeature.isFeatureSupported(WebViewFeature.SERVICE_WORKER_CACHE_MODE)) {
           Integer mode = (Integer) call.argument("mode");
           serviceWorkerWebSettings.setCacheMode(mode);
-        }
-        result.success(true);
-        break;
-      case "setRequestedWithHeaderMode":
-        if (serviceWorkerWebSettings != null && WebViewFeature.isFeatureSupported(WebViewFeature.REQUESTED_WITH_HEADER_CONTROL)) {
-          Integer mode = (Integer) call.argument("mode");
-          serviceWorkerWebSettings.setRequestedWithHeaderMode(mode);
         }
         result.success(true);
         break;

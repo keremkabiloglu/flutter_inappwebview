@@ -1,12 +1,11 @@
 import 'dart:async';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import '../util.dart';
-import '../debug_logging_settings.dart';
-import '../types/main.dart';
-import '../types/disposable.dart';
 
+import '../debug_logging_settings.dart';
+import '../types/disposable.dart';
+import '../types/main.dart';
+import '../util.dart';
 import '../web_uri.dart';
 import 'web_authenticate_session_settings.dart';
 

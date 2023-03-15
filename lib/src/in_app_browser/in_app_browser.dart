@@ -1,23 +1,19 @@
 import 'dart:async';
 import 'dart:collection';
-import 'dart:typed_data';
-import 'dart:ui';
 
 import 'package:flutter/services.dart';
 
 import '../context_menu.dart';
+import '../debug_logging_settings.dart';
 import '../find_interaction/find_interaction_controller.dart';
-import '../pull_to_refresh/main.dart';
-import '../types/main.dart';
-
 import '../in_app_webview/in_app_webview_controller.dart';
 import '../in_app_webview/in_app_webview_settings.dart';
-
-import '../util.dart';
 import '../print_job/main.dart';
+import '../pull_to_refresh/main.dart';
+import '../types/main.dart';
+import '../util.dart';
 import '../web_uri.dart';
 import 'in_app_browser_settings.dart';
-import '../debug_logging_settings.dart';
 
 class InAppBrowserAlreadyOpenedException implements Exception {
   final dynamic message;

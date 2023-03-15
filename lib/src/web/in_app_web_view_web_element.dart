@@ -1,16 +1,15 @@
 import 'dart:async';
-import 'dart:typed_data';
-import 'dart:ui';
-import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview/src/web_uri.dart';
 import 'dart:html';
 import 'dart:js' as js;
 
+import 'package:flutter/services.dart';
+import 'package:flutter_inappwebview/src/web_uri.dart';
+
+import '../in_app_webview/in_app_webview_settings.dart';
+import '../types/disposable.dart';
+import '../types/main.dart';
 import 'headless_inappwebview_manager.dart';
 import 'web_platform_manager.dart';
-import '../in_app_webview/in_app_webview_settings.dart';
-import '../types/main.dart';
-import '../types/disposable.dart';
 
 class InAppWebViewWebElement implements Disposable {
   late dynamic _viewId;

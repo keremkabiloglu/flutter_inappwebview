@@ -1,9 +1,11 @@
 import 'dart:ui';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter_inappwebview/src/types/main.dart';
 import 'package:flutter_inappwebview_internal_annotations/flutter_inappwebview_internal_annotations.dart';
 
+import '../in_app_webview/android/in_app_webview_options.dart';
+import '../in_app_webview/apple/in_app_webview_options.dart';
+import '../in_app_webview/in_app_webview_settings.dart';
 import '../types/in_app_webview_rect.dart';
 import '../types/modal_presentation_style.dart';
 import '../types/modal_transition_style.dart';
@@ -11,14 +13,8 @@ import '../types/window_style_mask.dart';
 import '../types/window_titlebar_separator_style.dart';
 import '../types/window_type.dart';
 import '../util.dart';
-
-import '../in_app_webview/in_app_webview_settings.dart';
-
 import 'android/in_app_browser_options.dart';
-import '../in_app_webview/android/in_app_webview_options.dart';
-
 import 'apple/in_app_browser_options.dart';
-import '../in_app_webview/apple/in_app_webview_options.dart';
 
 part 'in_app_browser_settings.g.dart';
 

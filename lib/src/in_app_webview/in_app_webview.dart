@@ -1,28 +1,25 @@
 import 'dart:async';
 import 'dart:collection';
-import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter_inappwebview/src/in_app_webview/headless_in_app_webview.dart';
 import 'package:flutter_inappwebview/src/util.dart';
 
-import '../find_interaction/find_interaction_controller.dart';
-import '../web/web_platform_manager.dart';
-
 import '../context_menu.dart';
-import '../types/main.dart';
+import '../find_interaction/find_interaction_controller.dart';
 import '../print_job/main.dart';
-
+import '../pull_to_refresh/main.dart';
+import '../types/main.dart';
+import '../web/web_platform_manager.dart';
 import '../web_uri.dart';
-import 'webview.dart';
 import 'in_app_webview_controller.dart';
 import 'in_app_webview_settings.dart';
-import '../pull_to_refresh/main.dart';
+import 'webview.dart';
 
 ///{@template flutter_inappwebview.InAppWebView}
 ///Flutter Widget for adding an **inline native WebView** integrated in the flutter widget tree.

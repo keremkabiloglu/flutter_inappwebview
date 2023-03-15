@@ -1,35 +1,30 @@
-import 'dart:io';
 import 'dart:collection';
 import 'dart:convert';
 import 'dart:core';
 import 'dart:developer' as developer;
-import 'dart:typed_data';
-import 'dart:ui';
+import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import '../web_uri.dart';
-import 'android/in_app_webview_controller.dart';
-import 'apple/in_app_webview_controller.dart';
-
+import '../android/webview_feature.dart';
 import '../context_menu.dart';
-import '../types/main.dart';
+import '../find_interaction/main.dart';
 import '../in_app_browser/in_app_browser.dart';
-import '../web_storage/web_storage.dart';
+import '../print_job/main.dart';
+import '../types/main.dart';
 import '../util.dart';
 import '../web_message/web_message_channel.dart';
 import '../web_message/web_message_listener.dart';
-import '../android/webview_feature.dart';
-
+import '../web_storage/web_storage.dart';
+import '../web_uri.dart';
+import '_static_channel.dart';
+import 'android/in_app_webview_controller.dart';
+import 'apple/in_app_webview_controller.dart';
 import 'headless_in_app_webview.dart';
 import 'in_app_webview.dart';
 import 'in_app_webview_settings.dart';
 import 'webview.dart';
-import '_static_channel.dart';
-
-import '../print_job/main.dart';
-import '../find_interaction/main.dart';
 
 ///List of forbidden names for JavaScript handlers.
 // ignore: non_constant_identifier_names

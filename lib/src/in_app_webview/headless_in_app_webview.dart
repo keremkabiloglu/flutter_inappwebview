@@ -1,21 +1,19 @@
 import 'dart:collection';
-import 'dart:typed_data';
-import 'dart:ui';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_inappwebview/src/util.dart';
 
 import '../context_menu.dart';
 import '../find_interaction/find_interaction_controller.dart';
-import '../types/main.dart';
 import '../print_job/main.dart';
-import '../web_uri.dart';
-import 'webview.dart';
-import 'in_app_webview_controller.dart';
-import 'in_app_webview_settings.dart';
 import '../pull_to_refresh/pull_to_refresh_controller.dart';
 import '../pull_to_refresh/pull_to_refresh_settings.dart';
 import '../types/disposable.dart';
+import '../types/main.dart';
+import '../web_uri.dart';
+import 'in_app_webview_controller.dart';
+import 'in_app_webview_settings.dart';
+import 'webview.dart';
 
 ///{@template flutter_inappwebview.HeadlessInAppWebView}
 ///Class that represents a WebView in headless mode.

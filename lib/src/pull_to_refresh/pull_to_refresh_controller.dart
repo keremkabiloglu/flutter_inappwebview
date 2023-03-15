@@ -1,13 +1,13 @@
-import 'dart:ui';
 
 import 'package:flutter/services.dart';
-import '../in_app_webview/webview.dart';
-import '../in_app_browser/in_app_browser.dart';
-import '../util.dart';
-import '../types/main.dart';
-import '../in_app_webview/in_app_webview_settings.dart';
-import 'pull_to_refresh_settings.dart';
+
 import '../debug_logging_settings.dart';
+import '../in_app_browser/in_app_browser.dart';
+import '../in_app_webview/in_app_webview_settings.dart';
+import '../in_app_webview/webview.dart';
+import '../types/main.dart';
+import '../util.dart';
+import 'pull_to_refresh_settings.dart';
 
 ///A standard controller that can initiate the refreshing of a scroll view’s contents.
 ///This should be used whenever the user can refresh the contents of a WebView via a vertical swipe gesture.
